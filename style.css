@@ -1,0 +1,276 @@
+/* ----------------------- */
+/* Reset + Global Styles   */
+/* ----------------------- */
+html, body { 
+  margin: 0; 
+  padding: 0; 
+}
+body {
+  background-color: #f5f5f5;
+}
+a {
+  text-decoration: none;
+  color: #A33912CC;
+}
+
+/* Global paragraph styling */
+p {
+  margin: 0;
+  max-width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #888888;
+  padding: 20px 15px 20px 15px;
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 18px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/* ----------------------- */
+/* Navbar                  */
+/* ----------------------- */
+.custom-navbar {
+  background-color: #f5f5f5;
+} 
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #888888;
+}
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus,
+.custom-navbar .nav-link.active {
+  color: #A33912CC;
+}
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  font-size: 1.5rem;
+  padding: 0px !important;
+}
+.nav-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* ----------------------- */
+/* Banner                  */
+/* ----------------------- */
+.banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 55vh;
+  background-color: #f5f5f5;
+}
+
+.banner-image {
+  max-width: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: bannerFadeIn 800ms ease-out 200ms forwards;
+}
+
+body.loaded .banner-image {
+  opacity: 1;
+}
+
+@keyframes bannerFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .banner-image {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* ----------------------- */
+/* Ponto Reto Section      */
+/* ----------------------- */
+.pontoreto {
+  padding: 0;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.titulo {
+  text-align: center;
+  font-family: 'Lavishly Yours', cursive;
+  font-size: 3rem;
+  color: #A33912CC;
+  padding: 0px 20px 2px;
+}
+
+@media (min-width: 1200px) {
+  .titulo {
+    font-size: 4rem;
+    padding: 60px 10px 2px;
+  }
+}
+
+/* ----------------------- */
+/* -Gallery -- Categorias- */
+/* ----------------------- */
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 0px 30px 0px;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #888888;
+  border-radius: 5%;
+  width: 160px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  div.gallery-item { width: 200px; }
+}
+
+div.gallery-item:hover {
+  border: 1px solid #A33912CC;
+  opacity: 1;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+div.gallery-item .desc {
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+  min-height: 50px;
+  font-size: 16px;
+}
+
+/* Make image + desc clickable */
+div.gallery-item > a {
+  display: flex;
+  flex-direction: column;
+  color: #A33912;
+  text-decoration: none;
+}
+
+div.gallery-item > a:hover {
+  color: #7a2a09;
+}
+
+/* ----------------------- */
+/* Animation + Frase       */
+/* ----------------------- */
+.anideco {
+  display: grid;
+  justify-items: center;
+  text-align: left;
+  margin: 0;
+}
+
+.anideco video {
+  width: 95%;
+}
+
+@media (min-width: 1200px) {
+  .anideco video { width: 40%; }
+}
+
+.contentfont {
+  padding: 5px 20px 20px;
+}
+
+@media (min-width: 1200px) {
+  .contentfont {
+    padding: 20px;
+    max-width: 800px;
+  }
+}
+
+/* ----------------------- */
+/* Headings (h2)           */
+/* ----------------------- */
+h2 {
+  text-align: center;
+  font-family: 'Lavishly Yours', cursive;
+  font-size: 3rem;
+  color: #A33912CC;
+  padding: 20px 20px 2px;
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 4rem;
+    padding: 60px 10px 2px;
+  }
+}
+
+/* ----------------------- */
+/* About Me Section        */
+/* ----------------------- */
+.sobremim {
+  display: grid;
+  justify-items: center;
+  text-align: left;
+  padding: 10px 0px;
+  background-color: #f5f5f5;
+}
+
+.sobremim video {
+  width: 90%;
+}
+
+@media (min-width: 1200px) {
+  .sobremim video { width: 30%; }
+}
+
+/* Social Icons */
+.socialm {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px 20px 0px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* ----------------------- */
+/* Footer                  */
+/* ----------------------- */
+footer {
+  text-align: center;
+  padding: 50px 0px 0px;
+  background-color: #f5f5f5;
+  color: #888888;
+  font-size: 8px;
+}
+
+@media (min-width: 1200px) {
+  footer { font-size: 10px; }
+}
