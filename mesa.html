@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <title>Mara Ponto Reto - Toalhas de mesa / Acessorios</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">
+  <img src="img/home.png" alt="Home" class="nav-icon">
+</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Sobre mim</a>
+        </li>
+        <li class="nav-item has-submenu">
+          <a class="nav-link" href="#">Produtos</a>
+          <ul class="submenu">
+        <li><a class="nav-link" href="mesa.html">Toalhas/Acessórios de Mesa</a></li>
+        <li><a class="nav-link" href="bolsas.html">Bolsas Artesanais</a></li>
+        <li><a class="nav-link" href="toalhas.html">Toalhas de Rosto</a></li>
+        <li><a class="nav-link" href="roupas.html">Roupinhas para Cachorro</a></li>
+      </ul>
+      <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">Ajuda</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<h2>Toalhas de Mesa / Acessórios</h2>
+<div class="bolsaani">
+  <video autoplay muted loop playsinline class="bolsaani">
+    <source src="img/mesa.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+      <p class="contentfont">As toalhas de mesa trazem um toque acolhedor ao seu lar, feitas para proteger sua mesa com elegância, são peças versáteis que combinam com diversos ambientes, ideais para uso diário ou ocasiões especiais.</p>
+</div>
+
+<div class="display-container">
+  <img class="mySlides" src="img/prod1.png">
+  <img class="mySlides" src="img/mesa1.jpg">
+  <img class="mySlides" src="img/coinha2.jpg">
+  <img class="mySlides" src="img/mesa2.jpg">
+  <img class="mySlides" src="img/mesa3.jpg">
+  <img class="mySlides" src="img/cozinha4.jpg">
+  <img class="mySlides" src="img/mesa4.jpg">
+  <img class="mySlides" src="img/mesa5.jpg">
+  <img class="mySlides" src="img/mesa6.jpg">
+  <img class="mySlides" src="img/mesa7.jpg">
+  <img class="mySlides" src="img/cozinha3.jpg">
+  <img class="mySlides" src="img/mesa8.jpg">
+  <img class="mySlides" src="img/mesa9.jpg">
+  <img class="mySlides" src="img/mesa10.jpg">
+  <img class="mySlides" src="img/mesa11.jpg">
+  <img class="mySlides" src="img/cozinha1.jpg">
+  <img class="mySlides" src="img/mesa12.jpg">
+ 
+
+
+  <button class="wleft" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="wright" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<ul class="contentfontlist">
+  <li><strong>Design exclusivo:</strong> Cada toalha é única, com combinações de cores, estampas e acabamentos que valorizam qualquer ambiente.</li>
+  <li><strong>Versatilidade:</strong> Ideais para o dia a dia, jantares especiais, cafés da tarde ou para receber visitas com charme.</li>
+  <li><strong>Tamanhos para todos:</strong> Diversos tamanhos ou feitas sob medida para se ajustar perfeitamente à sua mesa.</li>
+  <li><strong>Feitas à mão:</strong> Cada peça recebe atenção aos detalhes, garantindo durabilidade e qualidade.</li>
+  <li><strong>Fácil de lavar:</strong> Tecidos que podem ser lavados à mão ou na máquina no ciclo delicado.</li>
+</ul>
+<br>
+<p class="contentfont">
+  Quer uma toalha de mesa personalizada? <a href="contato.html">Entre em contato</a> e conte sua ideia!
+</p>
+<br>
+<br>
+<a href="index.html" class="btn" onclick="history.back()">Voltar</a>
+<br>
+<hr class="divider">
+<footer>
+    <p>&copy; 2025 Mara Ponto Reto. All rights reserved.</p>
+</footer>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
